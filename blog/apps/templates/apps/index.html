@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="imagenes/JC.jpg">
+
+
+    <title>Presentación</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+    
+    
+</head>
+<body>
+
+<input type="checkbox" id="tema-toggle">
+<nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+        <label for="tema-toggle" class="tema-boton">
+            <i class="fa-solid fa-moon"></i>
+        </label>
+            <a class="navbar-brand" href="#inicio">
+                <i class="fa-solid fa-code"></i>
+                INICIO
+            </a>
+<div id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-mi">
+                            Sobre mí
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">
+                            Proyectos
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+ <main>
+<section id="inicio" class="hero">
+        <div class="hero-content">
+            <img
+                src="blog/apps/static/apps/imagenes/JC.jpg"
+                class="hero-icon" alt="Imagen de Benjamín">
+                <p class="text-uppercase fw-bold text-secondary mb-2">
+                    Portfolio personal </p>
+                <h1>
+                    Hola, soy
+                    <span>Benjamín</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Estudiante de cuarto año computación.
+                    <br>
+                    Interesado en la programación y en proyectos</p>
+                <div class="hero-buttons">
+                    <a
+                        href="https://github.com/BenjaCRR"
+                        target="_blank"
+                        class="btn btn-dark hero-button"
+                    >
+                        <i class="fa-brands fa-github"></i>
+                        Mi GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+    <section id="sobre-mi" class="about-section">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <span>01 — SOBRE MÍ</span>
+
+                    <h2>¿Quién soy?</h2>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <p>
+                        Soy <strong>Benjamín Reyna</strong> y estoy cursando
+                        cuarto año en el Instituto Industrial L.A. Huergo.
+                    </p>
+
+                    <p>
+                        Soy un estudiante de 16 años que cursa en 4 año AO. 
+                        Actualmente estoy aprendiendo y desarrollando
+                        diferentes proyectos relacionados con la programación,
+                        especialmente utilizando Python, MySQL y HTML.
+                    </p>
+
+                    <p>
+                        Me interesa seguir aprendiendo mediante proyectos
+                        prácticos y experimentar con diferentes métodos de programación.
+                    </p>
+
+
+                    <div class="skills">
+
+                        <span class="skill">
+                            <i class="fa-brands fa-python"></i>
+                            Python
+                        </span>
+
+                        <span class="skill">
+                            <i class="fa-solid fa-database"></i>
+                            MySQL
+                        </span>
+
+                        <span class="skill">
+                            <i class="fa-brands fa-html5"></i>
+                            HTML
+                        </span>
+
+                        <span class="skill">
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="proyectos" class="projects-section">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <span>02 — PROYECTOS</span>
+
+                    <h2>Mis proyectos</h2>
+
+                </div>
+
+
+                <div class="row justify-content-center g-4">
+
+                    <div class="col-lg-5 col-md-8">
+
+                        <article class="card project-card">
+
+                            <div
+                                id="carouselPerfil"
+                                class="carousel slide"
+                                data-bs-ride="carousel"
+                            >
+
+                                <div class="carousel-inner">
+
+                                    <div class="carousel-item active">
+
+                                        <img
+                                            src="Imagenes/salame2.png"
+                                            class="d-block w-100"
+                                            alt="Captura de Supersalame 1"
+                                        >
+
+                                    </div>
+
+                                    <div class="carousel-item">
+
+                                        <img
+                                            src="Imagenes/foto1.jpg"
+                                            class="d-block w-100"
+                                            alt="Captura de Supersalame 2"
+                                        >
+
+                                    </div>
+                                    <div class="carousel-item">
+
+                                        <img
+                                            src="Imagenes/salame3.png"
+                                            class="d-block w-100"
+                                            alt="Captura de Supersalame 2"
+                                        >
+
+                                    </div>
+
+                                </div>
+
+
+                                <button
+                                    class="carousel-control-prev"
+                                    type="button"
+                                    data-bs-target="#carouselPerfil"
+                                    data-bs-slide="prev"
+                                >
+
+                                    <span
+                                        class="carousel-control-prev-icon"
+                                        aria-hidden="true"
+                                    ></span>
+
+                                    <span class="visually-hidden">
+                                        Anterior
+                                    </span>
+
+                                </button>
+
+
+                                <button
+                                    class="carousel-control-next"
+                                    type="button"
+                                    data-bs-target="#carouselPerfil"
+                                    data-bs-slide="next"
+                                >
+
+                                    <span
+                                        class="carousel-control-next-icon"
+                                        aria-hidden="true"
+                                    ></span>
+
+                                    <span class="visually-hidden">
+                                        Siguiente
+                                    </span>
+
+                                </button>
+
+                            </div>
+
+
+                            <div class="card-body">
+
+                                <span class="badge text-bg-danger mb-2">
+                                    Proyecto
+                                </span>
+
+                                <h3 class="card-title">
+                                    SUPERSALAME
+                                </h3>
+
+                                <p class="card-text">
+                                    Un juego divertido de cuidar a tu pequeño
+                                    embutido sabroso. Cuenta con aspectos,
+                                    minijuegos y diferentes elementos para
+                                    interactuar.
+                                </p>
+
+                                <a
+                                    href="https://github.com/tixi333/Proyecto-salame-ofc"
+                                    target="_blank"
+                                    class="btn project-button">
+                                    <i class="fa-brands fa-github"></i>Ver proyecto
+                                </a>
+
+                            </div>
+
+                        </article>
+                        
+                </div>
+<div class="col-lg-5 col-md-8">
+
+    <article class="card project-card">
+
+        <div id="carouselTerremotos" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img
+                        src="Imagenes/mapa.jpg"
+                        class="d-block w-100"
+                        alt="Captura de terremotos 1"
+                    >
+                </div>
+
+                <div class="carousel-item">
+                    <img
+                        src="Imagenes/terremoto2.jpg"
+                        class="d-block w-100"
+                        alt="Captura de terremotos 2"
+                    >
+                </div>
+
+            </div>
+
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselTerremotos"
+                data-bs-slide="prev"
+            >
+                <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                ></span>
+
+                <span class="visually-hidden">
+                    Anterior
+                </span>
+            </button>
+
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselTerremotos"
+                data-bs-slide="next"
+            >
+                <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                ></span>
+
+                <span class="visually-hidden">
+                    Siguiente
+                </span>
+            </button>
+
+        </div>
+
+        <div class="card-body">
+
+            <span class="badge text-bg-danger mb-2">
+                Proyecto
+            </span>
+
+            <h3 class="card-title">
+                Página sobre terremotos
+            </h3>
+
+            <p class="card-text">
+                Proyecto realizado utilizando HTML,
+                relacionado con los terremotos y la
+                presentación de información mediante una
+                página web.
+            </p>
+
+            <a
+                href="https://github.com/BenjaCRR/TP_lab_algoritmo"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn project-button"
+            >
+                <i class="fa-brands fa-github"></i>
+                Ver proyecto
+            </a>
+        </div>
+    </article>
+</div>
+
+</section>
+
+
+   <section id="contacto" class="contact-section">
+
+            <div class="container">
+
+                <div class="section-title">
+
+                    <span>03 — CONTACTO</span>
+
+                    <h2>¡Contactame!</h2>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <p>     Si querés contactarme, podés hacerlo mediante cualquiera de los siguientes medios. </p>
+
+                    <div class="contact-links">
+
+        <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=bramirezreyna@alumno.huergo.edu.ar&amp;su=Consulta%20desde%20mi%20portfolio" target="_blank"
+                        class="contact-link">
+                            <i class="fa-solid fa-envelope"></i>
+                            Email
+                        </a>
+
+                        <a
+                            class="contact-link"
+                            href="https://www.instagram.com/benjaa.crr/"
+                            target="_blank"
+                        >
+                            <i class="fa-brands fa-instagram"></i>
+                            Instagram
+                        </a>
+
+
+                        <a    class="contact-link" href="https://github.com/BenjaCRR"
+                            target="_blank"> <i class="fa-brands fa-github"></i>  GitHub </a>
+
+                    </div>
+    </div>
+    </div>
+    </section>
+    </main>
+<footer>
+
+        <p>
+            © 2026 JC GROUP — TP 
+            <br>
+            En caso de no andar mail. Mi mail de contacto es <strong> bramirezreyna@alumno.huergo.edu.ar </strong>
+        </p>
+
+    </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
