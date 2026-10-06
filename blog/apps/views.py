@@ -1,7 +1,23 @@
 from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404, redirect
+from .models import Post
+from .forms import ComentarioForm
 
-# Create your views here.
-from django.http import HttpResponse
+def inicio(request):
+    return render(request, 'inicio.html')
 
-def mi_ventana(request):
-    return HttpResponse("67")
+def lista(request):
+    return render(request, 'lista.html', {'posts': Post.objects.all()})
+
+def detalle(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    if request.method == 'POST':
+        form = ComentarioForm(request.POST)
+        if form.is_valid():
+            c = form.save(commit=False)
+            c.post = post
+            c.save()
+            return redirect('detalle', pk=pk)
+    else:
+        form = ComentarioForm()
+    return render(request, 'detalle.html', {'post': post, 'form': form})
