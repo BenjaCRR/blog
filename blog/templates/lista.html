@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block titulo %}Blog{% endblock %}
+
+{% block contenido %}
+<section class="blog-section">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>BLOG</span>
+            <h2>Mis entradas</h2>
+        </div>
+
+        <div class="row justify-content-center g-4">
+
+            {% for post in posts %}
+            <div class="col-lg-4 col-md-6">
+                <article class="card post-card">
+
+                    {% if post.imagen %}
+                    <img src="{{ post.imagen.url }}" alt="{{ post.titulo }}">
+                    {% endif %}
+
+                    <div class="card-body">
+                        <span class="post-date">
+                            <i class="fa-regular fa-calendar"></i>
+                            {{ post.fecha|date:"d/m/Y" }}
+                        </span>
+
+                        <h3 class="card-title post-title">
+                            <a href="{% url 'detalle' post.pk %}">{{ post.titulo }}</a>
+                        </h3>
+
+                        <p class="card-text">
+                            {{ post.contenido|truncatewords:30 }}
+                        </p>
+
+                        <a href="{% url 'detalle' post.pk %}" class="btn project-button">
+                            Leer entrada
+                        </a>
+                    </div>
+
+                </article>
+            </div>
+            {% empty %}
+            <p class="text-center">Todavía no hay entradas publicadas.</p>
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+</section>
+{% endblock %}

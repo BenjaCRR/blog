@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block titulo %}{{ post.titulo }}{% endblock %}
+
+{% block contenido %}
+<section class="blog-section">
+
+    <div class="container">
+
+        <a href="{% url 'lista' %}" class="volver-link">
+            <i class="fa-solid fa-arrow-left"></i> Volver al blog
+        </a>
+
+        <article class="post-detail">
+
+            <span class="post-date">
+                <i class="fa-regular fa-calendar"></i>
+                {{ post.fecha|date:"d/m/Y H:i" }}
+            </span>
+
+            <h1>{{ post.titulo }}</h1>
+
+            {% if post.imagen %}
+            <img src="{{ post.imagen.url }}" alt="{{ post.titulo }}">
+            {% endif %}
+
+            {% if post.video %}
+            <video controls src="{{ post.video.url }}"></video>
+            {% endif %}
+
+            <div class="post-body">
+                {{ post.contenido|linebreaks }}
+            </div>
+
+        </article>
+
+        <section class="comments">
+
+            <h2>Comentarios ({{ post.comentarios.count }})</h2>
+
+            {% for c in post.comentarios.all %}
+            <div class="comment">
+                <strong>{{ c.nombre }}</strong>
+                <small>{{ c.fecha|date:"d/m/Y H:i" }}</small>
+                <p>{{ c.texto|linebreaksbr }}</p>
+            </div>
+            {% empty %}
+            <p class="comments-empty">Todavía no hay comentarios. ¡Escribí el primero!</p>
+            {% endfor %}
+
+            <form method="post" class="comment-form">
+                {% csrf_token %}
+                <h3>Dejá tu comentario</h3>
+                {{ form.as_p }}
+                <button type="submit" class="btn project-button">Comentar</button>
+            </form>
+
+        </section>
+
+    </div>
+
+</section>
+{% endblock %}
