@@ -1,6 +1,6 @@
 Hola, si estás leyendo esto es porque estás viendo mi proyecto del Blog en mi portfolio.
 Esta es la lista de requerimientos para poder llegar hasta mi blog!
-Portfolio + Blog (TP Django)
+Portfolio - Blog (TP Django)
 
 Rapidito, qué es esto?
 Un sitio hecho con Django que tiene:
@@ -15,6 +15,10 @@ qUE TENGO DESCARGADO
 Python 3.11
 Django 5.2.17
 Tambien tengo django pillow 
+
+Necesario para correr el portfolio y el blog.
+Parado en la carpeta blog, que contiene manage.py, poner "python manage.py runserver" 
+Recien aquí podrás ver algo en el navegador.
 
 Direcciones 
 http://127.0.0.1:8000	IR A PORTFOLIO
