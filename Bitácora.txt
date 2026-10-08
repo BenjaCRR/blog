@@ -1,0 +1,20 @@
+17/09 - Jueves 
+    Primer dia donde suben el tp, aún no entendía django, por lo que me dediqué a ver el tutorial de la página django
+23/09 — Miércoles
+    Día sin mucho avance, estudié materias que rendía en la tarde y seguí viendo el tema de django. (creando el repo en primera insatncia pero trabajando aparte)
+24/09 — Jueves
+    Comencé a ver algunos videos que subió el profesor poniendolo en práctica
+25/09 — Viernes
+    finalicé el video...
+30/09/2026 — Miércoles
+    Para comenzar el blog, quise poner mi blog en primera insatncia, si bien pude bien, me faltó el css, no cargaba lo visual, imagenes, animaciones o coloes de fondo
+01/10/2026 — Jueves
+06/10/2026 — Martes
+Pude hacer el esqueleto de mi blog y pulirlo mejor, me basé en muchos tutoriales y terminaba la primera y principal etapa del tp.
+Ya podía subir post e imagenes pero tenía algunos errores o detalles faltantes.
+07/10/2026 — Miércoles
+Pude realizar el trabajo de TAGS para publicaciones ademas de que se mantenga el darkmode a través de las páginas.
+Lastimosamente NO pude comitearlo / subirlo correctamente entonces tendría que volver a hacerlo. (También perdí la bitácora que escribí, pero no estoy seguro si lo había subido o no. En algún lado me quedó)
+Correcciones en el readme También.
+08/10/2026 — Jueves
+Hoy, dia de entrega, tuve que volver a hacer lo de ayer, mantener el darkmode fue tarea sencilla ya que lo tenía fresco al ser lo último que hice ayer.
