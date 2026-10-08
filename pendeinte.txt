@@ -1,3 +1,0 @@
-
-tags de publicaciones
-barra de búsqueda (x tags? x nombre?)
