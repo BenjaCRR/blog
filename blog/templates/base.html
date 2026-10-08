@@ -87,5 +87,20 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    (function() {
+        const temaToggle = document.getElementById('tema-toggle');
+        const temaKey = 'tema-oscuro';
+
+        const savedTheme = localStorage.getItem(temaKey) === 'true';
+        if (savedTheme) {
+            temaToggle.checked = true;
+        }
+
+        temaToggle.addEventListener('change', function() {
+            localStorage.setItem(temaKey, String(this.checked));
+        });
+    })();
+</script>
 </body>
 </html>
