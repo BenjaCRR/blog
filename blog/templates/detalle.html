@@ -19,7 +19,13 @@
             </span>
 
             <h1>{{ post.titulo }}</h1>
-
+                {% if post.tags.all %}
+                <div class="post-tags-detail">
+                    {% for tag in post.tags.all %}
+                    <span class="tag-badge">{{ tag.nombre }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
             {% if post.imagen %}
             <img src="{{ post.imagen.url }}" alt="{{ post.titulo }}">
             {% endif %}

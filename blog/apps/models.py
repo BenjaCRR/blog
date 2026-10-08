@@ -2,13 +2,19 @@ from django.db import models
 
 from django.db import models
 from django.utils import timezone
-
+class Tag(models.Model):
+    nombre = models.CharField(max_length=50, unique=True)
+    class Meta:
+        ordering = ['nombre']
+    def __str__(self):
+        return self.nombre
 class Post(models.Model):
     titulo = models.CharField(max_length=200)
     contenido = models.TextField()
     imagen = models.ImageField(upload_to='posts/', blank=True, null=True)
     video = models.FileField(upload_to='videos/', blank=True, null=True)
     fecha = models.DateTimeField(default=timezone.now)
+    tags = models.ManyToManyField(Tag, related_name='posts', blank=True)
 
     class Meta:
         ordering = ['-fecha']

@@ -115,7 +115,23 @@
 }
 
 /* ---------- Comentarios ---------- */
+.post-tags,
+.post-tags-detail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0 16px;
+}
 
+.tag-badge {
+    display: inline-block;
+    background: var(--principal);
+    color: rgb(236, 230, 230);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
 .comments {
     margin-top: 50px;
 }
