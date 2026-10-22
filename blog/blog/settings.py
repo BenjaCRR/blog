@@ -17,8 +17,8 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Ruta donde se recolectarán los archivos para producción
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') 
-# URL pública para acceder a estos archivos en el navegador 
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+# URL pública para acceder a estos archivos en el navegador
 STATIC_URL = '/static/'
 
 # Quick-start development settings - unsuitable for production
@@ -122,9 +122,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.1/howto/static-files/
 
-STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
-
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
